@@ -10,7 +10,7 @@ namespace GitEsercitazione1
     {
         private string title;
         private string author;
-        private List<Track> tracks;
+        public List<Track> tracks;
         public CD(string title, string author)
         {
             this.title = title;
@@ -21,6 +21,10 @@ namespace GitEsercitazione1
         public string getAuthor() => author;
         public void setTitle(string title) => this.title = title;
         public void setAuthor(string author) => this.author = author;
+        public void AddSong(Track track)
+        {
+            tracks.Add(track);
+        }
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
