@@ -2,7 +2,7 @@
 {
     public class Track
     {
-        //For homework screen
+        //For homework screenshot
         private string title;
         private string author;
         private int duration;
